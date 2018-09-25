@@ -1,0 +1,36 @@
+# programacion-trabajos
+actividades de programación III visual
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int primercastiado = 50;
+            double primerres;
+            char segundocastiad = 'w';
+            string segundres;
+            string  tercerres;
+            float tercercasteo = 4145;
+            float cuartocasteo = 251;
+            int cuartares;
+
+            primerres = (double)primercastiado;
+            Console.WriteLine(primerres);
+
+            segundres = segundocastiad.ToString();
+            Console.WriteLine(segundres);
+
+            tercerres = tercercasteo.ToString();
+            Console.WriteLine(tercerres);
+
+            cuartares = (int)cuartocasteo;
+            Console.WriteLine(cuartares);
+
+            Console.ReadKey();
+        }
+    }
+}
