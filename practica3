@@ -1,0 +1,107 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApp3
+{
+    class Class2
+    {
+        public void casteo()
+        {
+            int primercastiado = 50;
+            double primerres;
+            char segundocastiad = 'w';
+            string segundres;
+            string tercerres;
+            float tercercasteo = 4145;
+            float cuartocasteo = 251;
+            int cuartares;
+
+            primerres = (double)primercastiado;
+            Console.WriteLine(primerres);
+
+            segundres = segundocastiad.ToString();
+            Console.WriteLine(segundres);
+
+            tercerres = tercercasteo.ToString();
+            Console.WriteLine(tercerres);
+
+
+
+            Console.ReadKey();
+        }
+    }
+}
+
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApp3
+{
+    class Class1
+    {
+        int a = 18;
+        int b = 2;
+        int c;
+        int d;
+        public void operacion()
+        {
+            Console.WriteLine("a es igual a 18");
+            Console.WriteLine("b es igual a 2");
+            Console.WriteLine("a+b=" + (a + b));
+            Console.WriteLine("a-b=" + (a - b));
+            Console.WriteLine("axb=" + (a* b));
+            Console.WriteLine("a/b=" + (a / b));
+            Console.WriteLine("a%b=" + (a % b));
+            c = a++;
+            Console.WriteLine("c=a++ es c= "+c+" a ="+a );
+            d = b++;
+            Console.WriteLine("d=b++ es d= " + d + " b =" + b);
+            c = ++a;
+            d = ++b;
+            Console.WriteLine("c=++a es c= " + c + " a =" + a);
+            Console.WriteLine("d=++b es d= " + d + " b =" + b);
+
+            if (a == c)
+            {
+                Console.WriteLine("este mensaje aparese porque a y c son iguales");
+            }
+
+            if (a > b)
+            {
+                Console.WriteLine("este mensaje aparese porque a en mayor que b");
+            }
+
+            if (b<a)
+            {
+                Console.WriteLine("este mensaje aparese porque b en menor que a");
+            }
+            Console.ReadKey();
+
+
+        }
+
+        
+
+    }
+}
+
+using System;
+
+namespace ConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("operadores basicos");
+            Class1 c = new Class1();
+            c.operacion();
+            Console.WriteLine("casteo");
+            Class2 c2 = new Class2();
+            c2.casteo();
+        }
+    }
+}
