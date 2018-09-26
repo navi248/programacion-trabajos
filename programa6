@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[,] matriz = new int[4, 5]
+                
+            {
+                { 1, 9, 23, 34, 102},
+                { 2, 8, 67, 56, 23},
+                { 3, 7, 84, 78, 73},
+                { 4, 5, 90, 98, 34}
+            };
+
+            for(int y=0; y<=3; y++)
+            {
+                for(int x=0; x<=4; x++)
+                {
+                    Console.Write(matriz[y, x]+" ");
+                }
+                Console.WriteLine();
+            }
+            Console.ReadKey();
+        }
+    }
+}
