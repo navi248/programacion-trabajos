@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int tabla, res;
+
+            Console.WriteLine("que tabla de multiplicar dessea del 1 al 10 desea");
+            tabla = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("la tabla del " + tabla+ " es:");
+            if(tabla<0 && tabla > 11)
+            {
+                for (int x=0; x < 11; x++)
+                {
+                res = x * tabla;
+                Console.WriteLine(tabla+ "x"+ x + "="+res);
+                }
+
+            }
+            
+            Console.ReadKey();
+        }
+    }
+}
